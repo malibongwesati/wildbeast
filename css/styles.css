@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.subheader {
+	height: 40vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(/img/gym/eggbells.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: whitesmoke;
+}
+
+.subheader header {
+	padding: 40px 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.subheader header .fa {
+	cursor: pointer;
+	font-size: 22px;
+}
+
+.subheader header a img {
+	width: 80px;
+	height: auto;
+	filter: invert(100%);
+}
+
+.subheader .toggle {
+	position: absolute;
+	background: #daa06d;
+	top: 0;
+	right: -300px;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.subheader .text h1 {
+	position: relative;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 5em;
+	font-weight: 800;
+	color: #daa06d;
+}
+
+.subheader .text p {
+	position: relative;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.menu {
+	position: fixed;
+	height: 100%;
+	width: 0;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	display: flex;
+	background-color: #daa06d;
+	overflow-x: hidden;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+
+.menu ul {
+	list-style: none;
+	text-align: flex-start;
+}
+
+.menu ul li {
+	margin-top: 10px;
+	align-items: center;
+}
+
+.menu ul li i {
+	margin-right: 15px;
+	font-size: 18px;
+	color: #964b00;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #111;
+	transition: 0.5s;
+}
+
+.menu ul li a:hover {
+	color: #fff;
+}
+
+.closebtn {
+	position: relative;
+	top: 0;
+	left: 25px;
+	font-size: 36px;
+	margin-right: 50px;
+}
+
+.sub-banner {
+	height: 10vh;
+	padding-top: 0;
+	width: 80%;
+	background-color: #964b00;
+	margin: auto;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sub-banner .col {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.sub-banner .col i {
+	margin: 0 10px;
+	font-size: 20px;
+	color: #daa06d;
+}
+
+.sub-banner .col p {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+	margin-right: 10px;
+	transition: 0.3s;
+}
+
+.sub-banner .col:hover p {
+	letter-spacing: 3px;
+}
+
+.explore {
+	padding: 40px 0;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	gap: 20px;
+}
+
+.explore img {
+	width: 400px;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.explore-text h1 {
+	margin-bottom: 10px;
+	font-size: 36px;
+	font-weight: 600;
+	color: #111;
+}
+
+.explore-text p {
+	line-height: 25px;
+	font-weight: 400;
+}
+
+.contact-banner {
+	height: 40vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(/img/gym/gym-room.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+
+.contact-banner .text h1 {
+	position: relative;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 5em;
+	font-weight: 800;
+	color: #daa06d;
+}
+
+.contact {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 80%;
+	margin: auto;
+}
+
+.contact-map iframe {
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+}
+
+.contact-form {
+	padding-top: 40px;
+}
+
+.contact-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form form .input-field {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+}
+
+form .input-field label {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+form .input-field input {
+	margin: 8px 0;
+	padding: 12px 20px;
+	height: 40px;
+	font-size: 16px;
+	color: #111;
+	border: 1px solid #daa06d;
+	border-radius: 5px;
+}
+
+form .input-field textarea {
+	padding: 12px 20px;
+	margin-top: 5px;
+	font-size: 16px;
+	color: #111;
+	border: 1px solid #daa06d;
+	border-radius: 5px;
+	resize: none;
+	line-height: 20px;
+}
+
+form .input-field a {
+	display: inline-block;
+	font-size: 1em;
+	background: #964b00;
+	padding: 10px 30px;
+	text-decoration: none;
+	color: #111;
+	margin-top: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.2s;
+	border-radius: 5px;
+	text-align: center;
+}
+
+form .input-field a:hover {
+	letter-spacing: 6px;
+	color: #fff;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #daa06d;
+	height: 30vh;
+	width: 100%;
+	padding-top: 40px;
+	color: #fff;
+}
+
+footer .logo img {
+	width: 100px;
+	height: 100%;
+}
+
+footer form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer form input {
+	margin: 8px 0;
+	padding: 12px 20px;
+	height: 40px;
+	font-size: 16px;
+	color: #111;
+	border: 1px solid #964b00;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+footer form button {
+	font-size: 1em;
+	background: #964b00;
+	padding: 10px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.2s;
+	border: none;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-align: center;
+}
+
+footer form button:hover {
+	letter-spacing: 6px;
+	color: #fff;
+}
+
+footer h1 {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 500;
+}
+
+footer .socials {
+	text-align: center;
+	padding: 10px;
+}
+
+footer .socials i {
+	font-size: 26px;
+	color: #964b00;
+	margin-right: 15px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+footer .socials i:hover {
+	color: #fff;
+}
+
+/* modal starts*/
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* modal ends*/
+
+.register {
+	width: 80%;
+	margin: auto;
+	padding: 40px;
+}
+
+.registration {
+	border: 1px solid #daa06d;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px 12px rgba(221, 221, 221, 0.9);
+	padding: 0px;
+}
+
+.register-col {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.third-parties {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*
+.parties-col {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.parties-col img {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.parties-col a {
+	display: inline-block;
+	text-decoration: none;
+	color: #111;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: capitalize;
+}*/
+
+.third-parties video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.register-form {
+	display: flex;
+	align-items: center;
+}
+
+.register-form form {
+	padding: 0px 10px;
+}
+
+.register-form form .input-field label {
+	font-size: 14px;
+}
+
+.register-form form .input-field input {
+	height: 30px;
+	font-size: 15px;
+}
+
+.register-form form a {
+	width: 100%;
+}
+
+.register-form form .registered {
+	color: #111;
+	margin-top: 8 px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.register-form form .registered:hover {
+	color: #964b00;
+	letter-spacing: 3px;
+}
+
+.classes {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 40px;
+}
+
+.classes-desc {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.classes-desc h1 {
+	font-weight: 400;
+	font-size: 36px;
+}
+
+.classes-info {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	padding-top: 40px;
+}
+
+.classes-info .card:nth-child(1) {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #888;
+	background: url(/img/classes/1.jpg) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.classes-info .card:nth-child(2) {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #888;
+	background: url(/img/classes/2.jpg) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.classes-info .card:nth-child(3) {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #888;
+	background: url(/img/classes/3.jpg) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.classes-info .card:nth-child(4) {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #888;
+	background: url(/img/classes/4.jpg) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.classes-info .card:nth-child(5) {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #888;
+	background: url(/img/classes/5.jpg) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.classes-info .card:nth-child(6) {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #888;
+	background: url(/img/classes/6.jpg) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.classes-info .card-content {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 20px;
+	background-color: #fff;
+	border-top-left-radius: 10px;
+	transform: translateY(70px);
+	transition: transform 0.25s;
+}
+
+.classes-info .card-content::before {
+	content: '';
+	position: absolute;
+	top: -47px;
+	right: -45px;
+	width: 100px;
+	transform: rotate(-175deg);
+	border-radius: 50%;
+	box-shadow: inset 48px #ddd;
+}
+
+.classes-info .card-title {
+	color: #964b00;
+	line-height: 15px;
+}
+
+.classes-info .card-subtitle {
+	display: block;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.classes-info .card-description {
+	font-size: 14px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.classes-info .card:hover .card-content {
+	transform: translateY(0);
+}
+
+.classes-info .card:hover .card-description {
+	opacity: 1;
+	transition-delay: 0.25s;
+}
+
+.action {
+	margin: 20px auto;
+	width: 80%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(/img/banner/1.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.action a {
+	display: inline-block;
+	font-size: 1em;
+	background: #964b00;
+	padding: 10px 30px;
+	text-decoration: none;
+	color: #111;
+	margin-top: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.2s;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.action a:hover {
+	letter-spacing: 6px;
+	color: #fff;
+}
+
+.gallery {
+	margin: 40px auto;
+	width: 80%;
+	position: relative;
+}
+
+.swiper {
+	width: 100%;
+	padding: 50px 0;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+/*media queries*/
+/*for the sidebar starts*/
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+/*for the sidebar ends*/
+/*=============================================*/
+/*=============================================*/
+/*for the explore page starts*/
+@media screen and (max-width: 768px) {
+	.explore {
+		flex-direction: column;
+	}
+
+	.subheader header a img {
+		width: 180px;
+	}
+
+	.classes-info {
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.subheader header {
+		padding: 40px 20px;
+	}
+
+	.subheader .text h1 {
+		font-size: 4em;
+	}
+
+	.sub-banner {
+		width: 90%;
+	}
+
+	.explore img {
+		width: 100%;
+	}
+
+	.explore-text h1 {
+		font-size: 30px;
+	}
+
+	footer form {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		width: 80%;
+	}
+}
+/*for the explore page ends*/

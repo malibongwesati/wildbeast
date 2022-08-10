@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WILD BEAST</title>
+		<link rel="icon" type="image/x-icon" href="/img/wildbeast-removebg.ico" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<style>
+			.contact-banner {
+				background-image: linear-gradient(
+						rgba(0, 0, 0, 0.7),
+						rgba(0, 0, 0, 0.7)
+					),
+					url(/img/gym/equipment.jpg);
+			}
+		</style>
+	</head>
+	<body id="main">
+		<section class="subheader contact-banner">
+			<header>
+				<a href="/">
+					<img src="/img/wildbeast-removebg.png" alt="" />
+				</a>
+				<i class="fa fa-bars" id="menu" onclick="openNav()"></i>
+				<div class="menu" id="mySidenav">
+					<ul>
+						<li>
+							<i class="fa-solid fa-house"></i>
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-magnifying-glass-location"></i>
+							<a href="explore.html">Explore</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-phone"></i>
+							<a href="contact.html">Contact</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-user"></i>
+							<a href="register.html">Membership</a>
+						</li>
+					</ul>
+					<i class="fa fa-times" onclick="closeNav()" id="closebtn"></i>
+				</div>
+			</header>
+			<div class="text">
+				<h1>#register</h1>
+			</div>
+		</section>
+		<section class="sub-banner">
+			<div class="col">
+				<i class="fa fa-calendar"></i>
+				<p class="trigger">Times</p>
+			</div>
+			<div class="col">
+				<i class="fa fa-location"></i>
+				<p>Directions</p>
+			</div>
+			<div class="col">
+				<i class="fa fa-phone"></i>
+				<p>Ring</p>
+			</div>
+
+			<!--Modals starts-->
+			<div class="modal">
+				<div class="modal-content">
+					<span class="close-button">&times;</span>
+					<h1>Hello, I am a modal!</h1>
+				</div>
+			</div>
+			<!--Modals ends-->
+		</section>
+		<section class="register">
+			<div class="registration">
+				<div class="register-col">
+					<div class="third-parties">
+						<video
+							src="/vid/two-people-jogging-across-a-footbridge.mp4"
+							muted
+							loop
+							autoplay
+						></video>
+					</div>
+					<div class="register-form">
+						<form>
+							<div class="input-field">
+								<label for="name">Full name:</label>
+								<input type="text" required />
+							</div>
+							<div class="input-field">
+								<label for="phone">Phone number:</label>
+								<input type="text" required />
+							</div>
+							<div class="input-field">
+								<label for="email">Email address:</label>
+								<input type="email" required />
+							</div>
+							<div class="input-field">
+								<label for="pwd">Password:</label>
+								<input type="password" required />
+							</div>
+							<div class="input-field">
+								<label for="retypepwd">Retype password:</label>
+								<input type="password" required />
+							</div>
+							<div class="input-field">
+								<a type="submit" href="explore.html">register</a>
+							</div>
+							<a href="login.html" class="registered">Already registered?</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<h1>Subscribe to newsfeeds</h1>
+			<form>
+				<input type="text" required placeholder="Email address" />
+				<button type="submit">Subscribe</button>
+			</form>
+			<div class="socials">
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+		</footer>
+	</body>
+	<script src="/js/script.js"></script>
+</html>

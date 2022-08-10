@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WILD BEAST</title>
+		<link rel="icon" type="image/x-icon" href="/img/wildbeast-removebg.ico" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="/css/styles.css" />
+	</head>
+	<body id="main">
+		<section class="subheader contact-banner">
+			<header>
+				<a href="/">
+					<img src="/img/wildbeast-removebg.png" alt="" />
+				</a>
+				<i class="fa fa-bars" id="menu" onclick="openNav()"></i>
+				<div class="menu" id="sidebar">
+					<ul>
+						<li>
+							<i class="fa-solid fa-house"></i>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-magnifying-glass-location"></i>
+							<a href="#">Explore</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-phone"></i>
+							<a href="#">Contact</a>
+						</li>
+						<li>
+							<i class="fa-solid fa-user"></i>
+							<a href="#">Membership</a>
+						</li>
+					</ul>
+				</div>
+				<i class="fa fa-times" onclick="closeNav()" id="closebtn"></i>
+			</header>
+			<div class="text">
+				<h1>#login</h1>
+			</div>
+		</section>
+		<section class="dashboard">
+			<aside></aside>
+		</section>
+		<footer>
+			<h1>Subscribe to newsfeeds</h1>
+			<form>
+				<input type="text" required placeholder="Email address" />
+				<button type="submit">Subscribe</button>
+			</form>
+			<div class="socials">
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+		</footer>
+	</body>
+	<script src="/js/script.js"></script>
+	<script>
+		function openNav() {
+			document.getElementById('menu').style.width = '300px';
+			document.getElementById('main').style.marginRight = '300px';
+			document.getElementById('closebtn').style.display = 'block';
+		}
+
+		function closeNav() {
+			document.getElementById('menu').style.width = '0';
+			document.getElementById('main').style.marginRight = '0';
+			document.getElementById('closebtn').style.display = 'none';
+		}
+	</script>
+</html>
